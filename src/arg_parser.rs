@@ -2,7 +2,7 @@ use clap::Parser;
 use url::Url;
 
 #[derive(Parser, Debug)]
-#[clap(author, version, about, long_about = None)]
+#[clap(name = "pcat", author, version, about, long_about = None)]
 pub struct Args {
     /// The path to the S3 file to be processed
     pub url: Url,

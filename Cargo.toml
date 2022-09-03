@@ -1,9 +1,10 @@
 [package]
-name = "pcat"
+name = "parquet-cat"
 version = "0.1.0"
 edition = "2021"
 author = "Yiping Deng"
-description = "A command-line tool to explore Parquet files on S3"
+email = "yiping.deng.98@gmail.com"
+description = "A command-line tool to explore Parquet files on S3, with folder support"
 
 [dependencies]
 aws-config = "0.48.0"
@@ -13,3 +14,7 @@ datafusion = "11.0.0"
 object_store = { version = "0.4.0", features = ["aws"] }
 tokio = "1.20.1"
 url = "2.2.2"
+
+[[bin]]
+name = "pcat"
+path = "src/main.rs"
