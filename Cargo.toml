@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 author = "Yiping Deng"
 email = "yiping.deng.98@gmail.com"
+license = "MIT"
 description = "A command-line tool to explore Parquet files on S3, with folder support"
 
 [dependencies]
